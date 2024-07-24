@@ -314,7 +314,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper d-flex flex-column flex-row-fluid">
+            <div class="wrapper w-100 d-flex flex-column flex-row-fluid">
                 <div class="header bg-white align-items-stretch">
                     <div class="container-fluid d-flex align-items-stretch justify-content-between">
                         <div class="d-flex align-items-center d-lg-none ms-n3 me-1" title="Show aside menu">
@@ -358,9 +358,7 @@
                                     <div class="d-flex align-items-center ms-1 ms-lg-3">
                                         <div class="btn btn-icon position-relative btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"
                                             data-kt-menu-trigger="hover" data-kt-menu-attach="parent"
-                                            data-kt-menu-placement="bottom-end" data-step="8"
-                                            data-intro="Create Client Add Staff, Manage Membersship, Purchase Addons, Purchase Group, and Much More"
-                                            data-title="Quick Links">
+                                            data-kt-menu-placement="bottom-end">
                                             <i class="bi bi bi-lightning-fill fs-2   fs-2"></i>
 
                                         </div>
@@ -368,7 +366,7 @@
                                             data-kt-menu="true">
                                             <div
                                                 class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-4 py-5 bg-primary">
-                                                <h3 class="text-white fw-bold mb-0">Quick Links</h3>
+                                                <h3 class="text-white fw-bold mb-0">Quick Access</h3>
                                             </div>
                                             <div class="row g-0 quicklins">
                                                 <div class="col-6">
@@ -528,9 +526,155 @@
 
                     </div>
                 </div>
+                <div class="content d-flex flex-column flex-column-fluid">
+                    <div class="toolbar">
+                        <div class="container-fluid d-flex flex-stack">
+                            <div class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+                                <h1 class="d-flex align-items-center text-dark fw-bolder fs-5 my-1">Create Appointment
+                                    Type
+                                    <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
+                                </h1>
+                            </div>
+                            <div class="d-flex align-items-center py-1">
+                                <a href="#" class="btn btn-sm btn-primary"> Review & Create
+                                    Appt </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="card-body pb-0 ">
+                            <div class="border p-5 mb-10 rounded-3 bg-white" data-kt-stepper-element="content">
+                                <div class="w-100 container-md m-0 px-2 max1000">
+                                    <div class="mb-0 pb-2">
+                                        <div class="row">
+                                            <div class="col-md-6 fv-row mb-4">
+
+                                                <label class="d-flex align-items-center fs-7 fw-bold mb-2">
+                                                    <span class="required">Appointment Name</span>
+                                                    <i class="fas fa-exclamation-circle ms-2 fs-7"
+                                                        data-bs-toggle="tooltip" title="Specify your Service Name"></i>
+                                                </label>
+
+                                                <input type="text" class="form-control form-control-sm  " name="name"
+                                                    placeholder="Enter Appointment Name" value="One on one Fitness" />
+
+                                            </div>
+                                            <div class="col-md-2 fv-row mb-2">
+
+                                                <label class="d-flex align-items-center fs-7 fw-bold mb-2">
+                                                    <span class="required">Duration</span>
+                                                    <i class="fas fa-exclamation-circle ms-2 fs-7"
+                                                        data-bs-toggle="tooltip" title="Duration of services"></i>
+                                                </label>
+
+                                                <input type="text" class="form-control form-control-sm " name="mints"
+                                                    placeholder="25" value="30 mints" />
+
+
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="required fs-7 fw-bold form-label mb-2"> Price per
+                                                    slot</label>
+                                                <input type="text" class="form-control form-control-sm  " name="rate"
+                                                    placeholder="$0" value="$60" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="required fs-7 fw-bold form-label mb-2"> Cancel Fee</label>
+                                                <input type="text" class="form-control form-control-sm  " name="rate"
+                                                    placeholder="$0" value="$05" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="row mb-4">
+
+                                        <div class="col-md-6 fv-row">
+
+                                            <div class="row fv-row">
+
+                                                <div class="col-12">
+                                                    <label class="required fs-7 fw-bold form-label mb-2"> Select
+                                                        Location</label>
+                                                    <select class="form-select  form-select-sm">
+                                                        <option> Select Location</option>
+                                                        <option selected value="1">Virtual Meeting</option>
+                                                        <option value="2">Phone Call</option>
+                                                        <option value="2">Location</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-6 fv-row">
+
+                                            <label class="d-flex align-items-center fs-7 fw-bold form-label mb-2">
+                                                <span class="required">Shareable Url Link</span>
+                                                <i class="fas fa-exclamation-circle ms-2 fs-7"></i>
+                                            </label>
+
+                                            <div class="position-relative">
+
+                                                <input type="text" class="form-control form-control-sm " minlength="3"
+                                                    maxlength="4" placeholder=" " name="" value="one-on-one-fitness" />
+
+                                                <div class="position-absolute translate-middle-y top-50 end-0 me-3">
+
+                                                    <i class="bi bi-share-fill"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div class="d-flex align-items-center  mb-5">
+
+                                        <div class="me-5">
+                                            <label class="fs-7 fw-bold form-label">
+                                                Include Surcharges
+                                            </label>
+                                            <div class="fs-7 fw-bold text-muted">Charge Surcharges to client for this
+                                                appointment</div>
+                                        </div>
+
+                                        <label class="form-check form-switch form-check-custom ">
+                                            <input class="form-check-input" type="checkbox" value="1" />
+                                            <span class="form-check-label fw-bold text-muted"> </span>
+                                        </label>
+
+                                    </div>
+                                    <div class="fv-row mb-5 fv-plugins-icon-container">
+
+                                        <label class="form-label"> Description</label>
+
+                                        <textarea name="Description" class="form-control form-control-sm"
+                                            style="height: 150px;"></textarea>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </div>
+
+    </div>
     </div>
 
 
