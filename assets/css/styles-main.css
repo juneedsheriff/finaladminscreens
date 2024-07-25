@@ -44,6 +44,7 @@
  .menu-title-gray-600 .menu-item .menu-link .menu-title {
      color: #fff;
      font-size: 11px;
+     font-weight: 400 !important;
  }
 
  .menu-sub.menu-sub-dropdown .menu-item .menu-link {
@@ -242,7 +243,7 @@
 
  @media (min-width:992px) {
      .content {
-         padding: 30px 0;
+         padding: 15px 0;
      }
 
      .container,
@@ -252,7 +253,7 @@
      .container-sm,
      .container-xl,
      .container-xxl {
-         padding: 0 30px;
+         padding: 0 15px;
      }
 
      .wrapper {
@@ -285,6 +286,7 @@
 
      .header-fixed.toolbar-fixed .wrapper {
          padding-top: calc(65px + 55px);
+         height: 100vh;
      }
 
      .w-lg-400px {
@@ -295,9 +297,7 @@
          margin-right: 5rem !important;
      }
 
-     .header-fixed.toolbar-fixed .wrapper {
-         padding-top: calc(65px + 55px);
-     }
+
  }
 
  .header {
@@ -497,4 +497,9 @@
      align-items: center;
      background-color: #fff;
      padding: .5rem;
+ }
+
+ .content {
+     overflow-y: auto;
+     min-height: 100px;
  }

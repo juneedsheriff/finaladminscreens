@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzops</title>
+    <link href="assets/css/plugins/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/plugins/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/plugins/line-awesome/line-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles-main.css">
+    <link rel="stylesheet" href="assets/css/buzops-global.css">
+</head>
+
+<body class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
+    <div class="d-flex flex-column flex-root">
+        <div class="page d-flex flex-row flex-column-fluid">
+            <div class="aside bg-buzpos" data-kt-drawer="true" data-kt-drawer-name="aside"
+                data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+                data-kt-drawer-width="auto" data-kt-drawer-direction="start"
+                data-kt-drawer-toggle="#buzops_aside_toggle">
+
+                <div class="aside-nav d-flex flex-column align-lg-center flex-column-fluid w-100 pt-5 pt-lg-0">
+                    <div class="menu menu-column menu-title-gray-600 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-6"
+                        data-kt-menu="true">
+                        <div class="menu-item py-3 pt-2">
+                            <a class="menu-link  menu-center" href="#">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-speedometer2 fs-2"></i>
+                                </span>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="aside-footer d-flex flex-column align-items-center flex-column-auto">
+                    <div class="mb-7">
+                        <button type="button"
+                            class="btn btm-sm btn-icon text-white btn-active-color-primary btn-active-light"
+                            data-kt-menu-trigger="hover" data-kt-menu-overflow="true" data-kt-menu-placement="top-start"
+                            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-dismiss="hover">
+                            <i class="bi bi-ui-checks-grid text-white fs-2 text-lg-1"></i>
+                        </button>
+                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px"
+                            data-kt-menu="true">
+                            <div class="menu-item px-3">
+                                <div class="menu-content fs-6 text-dark fw-bolder px-2 py-3">Other Links</div>
+                            </div>
+                            <div class="separator mb-3 opacity-75"></div>
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3"><i class="bi  bi-clock-history icon-buzpos"></i>Site
+                                    Activity</a>
+                            </div>
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3"><i class="bi bi-telephone icon-buzpos">
+                                    </i> Contact Support</a>
+                            </div>
+                            <div class=" mb-3 opacity-75"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper w-100 d-flex flex-column flex-row-fluid">
+                <div class="header bg-white align-items-stretch">
+                    <div class="container-fluid d-flex align-items-stretch justify-content-between">
+                        <div class="d-flex align-items-center d-lg-none ms-n3 me-1" title="Show aside menu">
+                            <div class="btn btn-icon btn-active-color-primary w-40px h-40px" id="kt_aside_toggle">
+                                <i class="bi bi-list" style="font-size: 26px;"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+                            <a href="#" class="d-lg-none">
+                                <img alt="Logo" src="assets/images/alloy.png" class="h-30px" />
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+                            <div class="d-flex align-items-stretch">
+                                <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-20 pb-2 pb-lg-0"
+                                    data-kt-drawer="true">
+                                    <img src="assets/images/alloy.png" alt="" class="h-55px">
+                                </div>
+                                <div class="searchclient  d-flex align-items-stretch flex-shrink-0">
+                                    <div class="d-flex align-items-center position-relative my-1">
+                                        <span class="svg-icon svg-icon-1 position-absolute ms-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
+                                                    rx="1" transform="rotate(45 17.0365 15.1223)" fill="#0295c2"></rect>
+                                                <path
+                                                    d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                    fill="#0295c2"></path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control   w-300px ps-14"
+                                            placeholder="Search Client">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-stretch justify-self-end flex-shrink-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content d-flex flex-column flex-column-fluid">
+                    <div class="toolbar">
+                        <div class="container-fluid  d-flex flex-stack">
+                            <div class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+                                <h1 class="d-flex align-items-center text-dark fw-bolder fs-5 my-1">Create Appointment
+                                    Type
+                                    <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
+                                </h1>
+                            </div>
+                            <div class="d-flex align-items-center py-1">
+                                <a id="review-create-btn" href="#" class="btn btn-sm btn-primary disabled"
+                                    data-bs-toggle="tooltip" title="Click to review and create appointment"> Review &
+                                    Create
+                                    Appt </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid px-5">
+                        <div class="card-body pb-0 ">
+                            <div class="border p-5 mb-10 rounded-3 bg-white">
+                                <div class="w-100 container-md  m-0 px-2 max1000">
+                                    <div class="fv-row mb-5 fv-plugins-icon-container">
+                                        <label class="form-label fs-7 fw-500"> Description</label>
+                                        <textarea name="Description" id="description"
+                                            class="form-control form-control-sm" style="height: 150px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="otherprefernces" class="d-none"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/css/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/bootstrap-maxlength.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/buzops.menu.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const descriptionTextarea = document.getElementById('description');
+            const reviewCreateBtn = document.getElementById('review-create-btn');
+
+
+            var tooltip = new bootstrap.Tooltip(reviewCreateBtn);
+
+            descriptionTextarea.addEventListener('input', function () {
+                if (descriptionTextarea.value.trim() !== '') {
+                    reviewCreateBtn.classList.remove('disabled');
+                    reviewCreateBtn.style.backgroundColor = "#009ef7";
+                    tooltip.show();
+                } else {
+                    reviewCreateBtn.classList.add('disabled');
+                    reviewCreateBtn.style.backgroundColor = "";
+                    tooltip.hide();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
