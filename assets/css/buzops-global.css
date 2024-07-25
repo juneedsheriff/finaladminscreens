@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 html {
     font-family: sans-serif;
@@ -18,7 +18,7 @@ html {
     padding: 0;
     font-size: 13px !important;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -129,7 +129,7 @@ h6 {
 }
 
 .fw-bold {
-    font-weight: 400 !important;
+    font-weight: 600 !important;
 }
 
 .fw-bolder {
@@ -912,6 +912,10 @@ btn.btn-color-white {
     align-items: center;
 }
 
+label {
+    font-size: 12px;
+}
+
 .flex-stack {
     justify-content: space-between;
     align-items: center;
@@ -920,6 +924,15 @@ btn.btn-color-white {
 .form-control:focus {
     box-shadow: none;
     border-color: #dee2e6;
+}
+
+flex-row-fluid {
+    flex: 1 auto;
+    min-width: 0;
+}
+
+.flex-root {
+    flex: 1;
 }
 
 .icon-buzpos {

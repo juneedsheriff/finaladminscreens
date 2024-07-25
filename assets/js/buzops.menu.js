@@ -2615,8 +2615,8 @@ var KTApp = (function () {
                     this.initCountUp(),
                     this.initCountUpTabs(),
                     this.initAutosize(),
-                    this.initTinySliders(),
-                    this.initSmoothScroll();
+                    this.initTinySliders();
+
           },
           initPageLoader: function () {
                KTUtil.removeClass(document.body, "page-loading");

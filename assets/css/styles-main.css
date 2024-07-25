@@ -242,7 +242,7 @@
 
  @media (min-width:992px) {
      .content {
-         padding: 30px 0;
+         padding: 15px 0;
      }
 
      .container,
@@ -285,6 +285,7 @@
 
      .header-fixed.toolbar-fixed .wrapper {
          padding-top: calc(65px + 55px);
+         height: 100vh;
      }
 
      .w-lg-400px {
@@ -295,9 +296,7 @@
          margin-right: 5rem !important;
      }
 
-     .header-fixed.toolbar-fixed .wrapper {
-         padding-top: calc(65px + 55px);
-     }
+
  }
 
  .header {
@@ -497,4 +496,9 @@
      align-items: center;
      background-color: #fff;
      padding: .5rem;
+ }
+
+ .content {
+     overflow-y: auto;
+     min-height: 100px;
  }
