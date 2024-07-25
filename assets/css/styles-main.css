@@ -44,6 +44,7 @@
  .menu-title-gray-600 .menu-item .menu-link .menu-title {
      color: #fff;
      font-size: 11px;
+     font-weight: 400 !important;
  }
 
  .menu-sub.menu-sub-dropdown .menu-item .menu-link {
@@ -252,7 +253,7 @@
      .container-sm,
      .container-xl,
      .container-xxl {
-         padding: 0 30px;
+         padding: 0 15px;
      }
 
      .wrapper {

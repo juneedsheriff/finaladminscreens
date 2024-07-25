@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" href="assets/css/styles-main.css">
     <link rel="stylesheet" href="assets/css/buzops-global.css">
-
-
 </head>
 
 <body class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
@@ -20,7 +18,8 @@
         <div class="page d-flex flex-row flex-column-fluid">
             <div class="aside bg-buzpos" data-kt-drawer="true" data-kt-drawer-name="aside"
                 data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
-                data-kt-drawer-width="auto" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
+                data-kt-drawer-width="auto" data-kt-drawer-direction="start"
+                data-kt-drawer-toggle="#buzops_aside_toggle">
 
                 <div class="aside-nav d-flex flex-column align-lg-center flex-column-fluid w-100 pt-5 pt-lg-0">
                     <div class="menu menu-column menu-title-gray-600 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-6"
@@ -101,13 +100,8 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-stretch justify-self-end flex-shrink-0">
-
-
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
                 <div class="content d-flex flex-column flex-column-fluid">
@@ -120,9 +114,10 @@
                                 </h1>
                             </div>
                             <div class="d-flex align-items-center py-1">
-                                <a href="#" class="btn btn-sm btn-primary"> Review & Create
+                                <a id="review-create-btn" href="#" class="btn btn-sm btn-primary disabled"
+                                    data-bs-toggle="tooltip" title="Click to review and create appointment"> Review &
+                                    Create
                                     Appt </a>
-
                             </div>
                         </div>
                     </div>
@@ -130,28 +125,20 @@
                         <div class="card-body pb-0 ">
                             <div class="border p-5 mb-10 rounded-3 bg-white">
                                 <div class="w-100 container-md  m-0 px-2 max1000">
-
-
-
-
-
-
-
+                                    <div class="fv-row mb-5 fv-plugins-icon-container">
+                                        <label class="form-label fs-7 fw-500"> Description</label>
+                                        <textarea name="Description" id="description"
+                                            class="form-control form-control-sm" style="height: 150px;"></textarea>
+                                    </div>
                                 </div>
                             </div>
+                            <div id="otherprefernces" class="d-none"> </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
-
     </div>
-    </div>
-
-
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/css/plugins/bootstrap/bootstrap.bundle.min.js"></script>
@@ -160,6 +147,27 @@
     <script src="assets/js/daterangepicker.js"></script>
     <script src="assets/js/buzops.menu.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const descriptionTextarea = document.getElementById('description');
+            const reviewCreateBtn = document.getElementById('review-create-btn');
+
+
+            var tooltip = new bootstrap.Tooltip(reviewCreateBtn);
+
+            descriptionTextarea.addEventListener('input', function () {
+                if (descriptionTextarea.value.trim() !== '') {
+                    reviewCreateBtn.classList.remove('disabled');
+                    reviewCreateBtn.style.backgroundColor = "#009ef7";
+                    tooltip.show();
+                } else {
+                    reviewCreateBtn.classList.add('disabled');
+                    reviewCreateBtn.style.backgroundColor = "";
+                    tooltip.hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
