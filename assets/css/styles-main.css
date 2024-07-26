@@ -505,31 +505,32 @@
  }
 
  .coupounbadeage {
-     background-color: rgb(20 114 143) !important;
+     background-color: #059FCF !important;
+     min-width: 75px;
  }
 
  .coupon-card {
-     background: #059fcf;
-     color: #fff;
+     
+     
      text-align: left;
-     padding: 20px 30px;
+     padding: 10px 15px;
      border-radius: 15px;
-     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    border: 1px dashed #059FCF;
      position: relative;
 
  }
 
  .coupon-card .form-check-input:checked {
-     background-color: #14728f;
-     border-color: #05a1d2;
+     background-color: #059FCF;
+     border-color: #059FCF;
  }
 
 
- .coupon-card h3 {
+ .coupon-card h2 {
      font-size: 14px;
      font-weight: 400;
      line-height: normal;
-
+color: #059FCF;
  }
 
  .coupon-card p {
@@ -558,9 +559,9 @@
  }
 
  .circle1 {
-     left: -10px;
+     left: -6px;
  }
 
  .circle2 {
-     right: -10px;
+     right: -6px;
  }
