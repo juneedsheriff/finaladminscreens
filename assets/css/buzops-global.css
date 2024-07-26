@@ -1583,3 +1583,6 @@ right:50px;
 
 .content-coupons { display: none; }
 .content-coupons.active { display: block; }
+.bg-primary {
+     background-color: rgb(1 146 191) !important;
+}
