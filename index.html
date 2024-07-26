@@ -20,8 +20,7 @@
         <div class="page d-flex flex-row flex-column-fluid">
             <div class="aside bg-buzpos" data-kt-drawer="true" data-kt-drawer-name="aside"
                 data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
-                data-kt-drawer-width="auto" data-kt-drawer-direction="start"
-                data-kt-drawer-toggle="#buzops_aside_toggle">
+                data-kt-drawer-direction="start" data-kt-drawer-toggle="#buzops_aside_toggle">
 
                 <div class="aside-nav d-flex flex-column align-lg-center flex-column-fluid w-100 pt-5 pt-lg-0">
                     <div class="menu menu-column menu-title-gray-600 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-6"
@@ -319,7 +318,8 @@
                 <div class="header bg-white align-items-stretch">
                     <div class="container-fluid d-flex align-items-stretch justify-content-between">
                         <div class="d-flex align-items-center d-lg-none ms-n3 me-1" title="Show aside menu">
-                            <div class="btn btn-icon btn-active-color-primary w-40px h-40px" id="buzops_aside_toggle">
+                            <div class="btn btn-icon btn-active-color-primary w-40px h-40px ps-0"
+                                id="buzops_aside_toggle">
                                 <i class="bi bi-list" style="font-size: 26px;"></i>
                             </div>
                         </div>
@@ -537,8 +537,7 @@
                                 </h1>
                             </div>
                             <div class="d-flex align-items-center py-1">
-                                <a href="#" class="btn btn-sm btn-primary disabled" id="review-create-btn"
-                                    data-bs-toggle="tooltip" title="Review your preferences & create appt"> Review &
+                                <a href="#" class="btn btn-sm btn-primary disabled" id="review-create-btn">
                                     Create
                                     Appt </a>
 
@@ -549,6 +548,11 @@
                         <div class="card-body pb-0  h-100 ">
                             <div class="boxshadow p-5 mb-10 rounded-3 bg-white h-100">
                                 <div class="w-100 container-md m-0 px-2 max1000">
+
+                                    <h1 class="mb-1 fs-4">Basic Information
+                                    </h1>
+                                    <p class="required text-muted">Complete the form and set providers' payouts and
+                                        communication preferences. </p>
                                     <div class="mb-0 pb-2">
                                         <div class="row">
                                             <div class="col-md-6 fv-row mb-3">
@@ -560,41 +564,59 @@
                                                 </label>
 
                                                 <input type="text" class="form-control form-control-sm  " name="name"
-                                                    placeholder="Enter Appointment Name" value="One on one Fitness" />
+                                                    placeholder="Enter Appointment Name" />
 
                                             </div>
-                                            <div class="col-md-2 fv-row mb-3">
+                                            <div class="col-md-3 fv-row mb-3">
 
-                                                <label class="d-flex align-items-center fs-7 fw-500 mb-2">
-                                                    <span class="required">Duration</span>
-                                                    <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                        data-bs-toggle="tooltip" title="Duration of services"></i>
-                                                </label>
+                                                <div class="row fv-row">
 
-                                                <input type="text" class="form-control form-control-sm " name="mints"
-                                                    placeholder="25" value="30 mints" />
+                                                    <div class="col-12">
+                                                        <label class="required fs-7 fw-500 form-label mb-2">
+                                                            Duration</label>
+                                                        <div class="d-flex">
+                                                            <div class="px-0 mx-0">
+                                                                <input type="text"
+                                                                    class="form-control form-control-sm brtr0 fixed-width-input"
+                                                                    name="mints" placeholder=" " value="60">
+                                                            </div>
+                                                            <div class="px-0 mx-0 flex-grow-select"
+                                                                style="display: flex;">
+                                                                <select name="Min"
+                                                                    class="form-select form-select-sm brtl0 w-100"
+                                                                    data-control="select2" data-hide-search="true"
+                                                                    data-placeholder="Min">
+                                                                    <option value="1">Min</option>
+                                                                    <option value="2">Hours</option>
+                                                                    <option value="1">Days</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
 
 
                                             </div>
-                                            <div class="col-md-2 mb-3">
+                                            <div class="col-md-3 mb-3">
                                                 <label class="required fs-7 fw-500 form-label mb-2"> Price per
                                                     slot</label>
-                                                <input type="text" class="form-control form-control-sm  " name="rate"
-                                                    placeholder="$0" value="$60" />
+                                                <input type="text" class="form-control form-control-sm " name="rate"
+                                                    placeholder="$0" id="description" />
                                             </div>
-                                            <div class="col-md-2 mb-3">
-                                                <label class="required fs-7 fw-bold form-label mb-2"> Cancel Fee</label>
-                                                <input type="text" class="form-control form-control-sm  " name="rate"
-                                                    placeholder="$0" value="$05" />
-                                            </div>
+
                                         </div>
 
                                     </div>
 
 
                                     <div class="row mb-4">
-
-                                        <div class="col-md-6 fv-row mb-3">
+                                        <div class="col-md-4 mb-3">
+                                            <label class="required fs-7 fw-bold form-label mb-2"> Cancel Fee</label>
+                                            <input type="text" class="form-control form-control-sm  " name="rate"
+                                                placeholder="$0" value="$0" />
+                                        </div>
+                                        <div class="col-md-4 fv-row mb-3">
 
                                             <div class="row fv-row">
 
@@ -613,7 +635,7 @@
 
                                         </div>
 
-                                        <div class="col-md-6 fv-row mb-3">
+                                        <div class="col-md-4 fv-row mb-3">
 
                                             <label class="d-flex align-items-center fs-7 fw-500 form-label mb-2">
                                                 <span class="required">Shareable Url Link</span>
@@ -656,30 +678,223 @@
                                         </label>
 
                                     </div>
-                                    <div class="fv-row mb-5 fv-plugins-icon-container">
+                                    <div class="fv-row mb-5 fv-plugins-icon-container ">
 
                                         <label class="form-label fs-7 fw-500"> Description</label>
+                                        <textarea name="Description" class="form-control form-control-sm"
+                                            style="height: 150px;"></textarea>
 
-                                        <textarea name="Description" id="description"
-                                            class="form-control form-control-sm" style="height: 150px;"></textarea>
 
 
                                     </div>
+                                    <div class="fv-row mb-5 fv-plugins-icon-container text-center">
+                                        <span id="scrolldown" class="arrowanimation d-none">
+                                            <a href="#otherprefernces"><span></span>Review & <br /> Create Appt</a>
+                                        </span>
+                                    </div>
+
 
                                 </div>
-                                <div id="otherprefernces" class="d-none">
 
-                                    <div class="w-100 container-md m-0 px-2 max1000">
+                                <div id="otherprefernces">
+                                    <div class="w-100 container-md m-0 px-2 max1000 mtb-100">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <div>
+                                                <h1 class="mb-1 fs-4">Coupons
+                                                </h1>
+                                                <p class="required text-muted">The coupon can only be applied to this
+                                                    service.
+                                                </p>
+                                            </div>
+                                            <div><a href="#" class="btn btn-light-secondary btn-sm"> <i
+                                                        class="bi bi-plus-lg"></i>Add Coupon</a>
+                                            </div>
+                                        </div>
 
-                                        <h1 class="mb-3 fs-4">Communication Perference
-                                        </h1>
+                                        <div class="mt-5">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="coupon-card">
+
+
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div> <span class="badge coupounbadeage">Fixed</span></div>
+                                                            <div> <label
+                                                                    class="form-check form-switch form-check-custom ">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1" />
+                                                                    <span class="form-check-label fw-500 text-muted">
+                                                                    </span>
+                                                                </label> </div>
+                                                        </div>
+
+
+
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <h2 class="mt-3 text-white fs-6">StrongerYou2024</h2>
+                                                                <p> Frequency: One Time</p>
+                                                            </div>
+                                                            <div> $10 </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <p class="fs-7 mb-0">Valid Till: Dec 20, 2024</p>
+
+                                                            </div>
+                                                            <div> Active</div>
+                                                        </div>
+
+                                                        <div class="circle1"></div>
+                                                        <div class="circle2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <hr />
+                                    <div class="w-100 container-md m-0 px-2 max1000 mtb-100">
+
                                         <div class="fv-row ">
 
-                                            <label class="d-flex align-items-center fs-7   mb-4">
-                                                <span class="required">Send an email reminder to attendees before a
-                                                    meeting starts</span>
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"></i>
-                                            </label>
+                                            <h1 class="mb-1 fs-4">Preferred Providers
+                                            </h1>
+                                            <p class=" text-muted">Add Provider for One-on-One
+                                                Service
+                                            </p>
+
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="rounded d-flex flex-stack bg-active-lighten p-4">
+
+                                                    <div class="d-flex align-items-center">
+
+                                                        <label class="form-check form-check-custom  me-5">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                        </label>
+
+                                                        <div class="symbol symbol-35px symbol-circle">
+                                                            <img alt="Pic" src="assets/images/150-1.jpg">
+                                                        </div>
+
+                                                        <div class="ms-5">
+                                                            <a href="#"
+                                                                class="fs-7 fw-bolder text-gray-900 text-hover-primary  mb-2">Emma
+                                                                Smith</a>
+                                                            <div class="col-md-12 mt-2">
+                                                                <div class="input-group providers mb-5">
+
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm h-auto fixed-width-input-provider"
+                                                                        value="G3JXF2BQ">
+                                                                    <a class="btn btn-primary btn-sm "><i
+                                                                            class="las la-copy fs-2"></i>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="rounded d-flex flex-stack bg-active-lighten p-4">
+
+                                                    <div class="d-flex align-items-center">
+
+                                                        <label class="form-check form-check-custom  me-5">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                        </label>
+
+                                                        <div class="symbol symbol-35px symbol-circle">
+                                                            <img alt="Pic" src="assets/images/150-15.jpg">
+                                                        </div>
+
+                                                        <div class="ms-5">
+                                                            <a href="#"
+                                                                class="fs-7 fw-bolder text-gray-900 text-hover-primary  mb-2">Sean
+                                                                Bean</a>
+                                                            <div class="col-md-12 mt-2">
+                                                                <div class="input-group providers mb-5">
+
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm h-auto fixed-width-input-provider"
+                                                                        value="A4KDF9E3">
+                                                                    <a class="btn btn-primary btn-sm "><i
+                                                                            class="las la-copy fs-2"></i>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="rounded d-flex flex-stack bg-active-lighten p-4">
+
+                                                    <div class="d-flex align-items-center">
+
+                                                        <label class="form-check form-check-custom  me-5">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                        </label>
+
+                                                        <div class="symbol symbol-35px symbol-circle">
+                                                            <img alt="Pic" src="assets/images/150-4.jpg">
+                                                        </div>
+
+                                                        <div class="ms-5">
+                                                            <a href="#"
+                                                                class="fs-7 fw-bolder text-gray-900 text-hover-primary  mb-2">Brian
+                                                                Cox</a>
+                                                            <div class="col-md-12 mt-2">
+                                                                <div class="input-group providers mb-5">
+
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm h-auto fixed-width-input-provider"
+                                                                        value="Q2WET2FK">
+                                                                    <a class="btn btn-primary btn-sm "><i
+                                                                            class="las la-copy fs-2"></i>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <hr />
+                                    <div class="w-100 container-md m-0 px-2 max1000 mtb-100">
+
+                                        <h1 class="mb-1 fs-4">Communication Perference
+                                        </h1>
+                                        <p class="required text-muted">Send an email reminder to attendees before a
+                                            meeting starts</p>
+                                        <div class="fv-row ">
+
+
 
                                             <div class="row">
                                                 <div class="mb-5 fv-row">
@@ -751,6 +966,7 @@
                                                                         class="form-select form-select-sm brtl0 w-100"
                                                                         data-control="select2" data-hide-search="true"
                                                                         data-placeholder="Min">
+                                                                        <option value="1">Min Before</option>
                                                                         <option value="1">Hours Before</option>
                                                                         <option value="2">Days Before</option>
                                                                     </select>
@@ -782,6 +998,7 @@
                                                                         class="form-select form-select-sm brtl0 w-100"
                                                                         data-control="select2" data-hide-search="true"
                                                                         data-placeholder="Min">
+                                                                        <option value="1">Min Before</option>
                                                                         <option value="1">Hours Before</option>
                                                                         <option value="2">Days Before</option>
                                                                     </select>
@@ -812,6 +1029,7 @@
                                                                         class="form-select form-select-sm brtl0 w-100"
                                                                         data-control="select2" data-hide-search="true"
                                                                         data-placeholder="Min">
+                                                                        <option value="1">Min Before</option>
                                                                         <option value="1">Hours Before</option>
                                                                         <option value="2">Days Before</option>
                                                                     </select>
@@ -833,7 +1051,267 @@
 
 
                                     </div>
+                                    <hr />
+                                    <div class="w-100 container-md m-0 px-2 max1000 mtb-100">
 
+                                        <h1 class="mb-1 fs-4">Payouts
+                                        </h1>
+                                        <p class="required text-muted">Manage appointment payouts for providers and
+                                            check default payout modes</p>
+                                        <div class="col-md-12">
+                                            <label class="fs-7 fw-500 form-label mb-2"> Set default values for all
+                                                providers or adjust for individual providers.</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row mb-4">
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="flat-rate-checkbox-default"></label>
+
+
+                                                                    <label for="flat-rate-checkbox-default"
+                                                                        class="ms-2">Flat
+                                                                        Rate</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="flat-rate-default" placeholder=" "
+                                                                        value="$0" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="percentage-checkbox-default">
+                                                                    </label>
+
+                                                                    <label for="percentage-checkbox-default"
+                                                                        class="ms-2">Percentage</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="percentage-default" placeholder=" "
+                                                                        value="0%" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="commission-checkbox-default"></label>
+
+                                                                    <label for="commission-checkbox-default"
+                                                                        class="ms-2">Commission</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="commission-default" placeholder=" "
+                                                                        value="$0" disabled>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="fs-7 fw-500 form-label mb-2"
+                                                    style="color: #673AB7;">Michael
+                                                    Benso</label>
+                                            </div>
+                                            <div class="row mb-4">
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="flat-rate-checkbox-michael"
+                                                                            checked></label>
+                                                                    <label for="flat-rate-checkbox-michael"
+                                                                        class="ms-2">Flat Rate</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="flat-rate-michael" placeholder=" "
+                                                                        value="$10">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="percentage-checkbox-michael"
+                                                                            checked></label>
+
+                                                                    <label for="percentage-checkbox-michael"
+                                                                        class="ms-2">Percentage</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="percentage-michael" placeholder=" "
+                                                                        value="25%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="commission-checkbox-michael"
+                                                                            checked></label>
+
+                                                                    <label for="commission-checkbox-michael"
+                                                                        class="ms-2">Commission</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="commission-michael" placeholder=" "
+                                                                        value="$15">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- New Provider -->
+                                            <div class="col-md-12">
+                                                <label class="fs-7 fw-500 form-label mb-2" style="color: #2196F3;">Sarah
+                                                    Johnson</label>
+                                            </div>
+                                            <div class="row mb-4">
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="flat-rate-checkbox-sarah"
+                                                                            checked></label>
+                                                                    <label for="flat-rate-checkbox-sarah"
+                                                                        class="ms-2">Flat
+                                                                        Rate</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="flat-rate-sarah" placeholder=" "
+                                                                        value="$10">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="percentage-checkbox-sarah"
+                                                                            checked></label>
+                                                                    <label for="percentage-checkbox-sarah"
+                                                                        class="ms-2">Percentage</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="percentage-sarah" placeholder=" "
+                                                                        value="25%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 fv-row mb-3">
+                                                    <div class="row fv-row">
+                                                        <div class="col-12">
+                                                            <div class="d-flex">
+                                                                <div class="px-0 mx-0 flex-grow-select form-control brtr0 px-2"
+                                                                    style="display: flex;">
+                                                                    <label class="form-check form-check-custom  me-5">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="commission-checkbox-sarah"
+                                                                            checked></label>
+                                                                    <label for="commission-checkbox-sarah"
+                                                                        class="ms-2">Commission</label>
+                                                                </div>
+                                                                <div class="px-0 mx-0">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm brtl0 fixed-width-input"
+                                                                        name="commission-sarah" placeholder=" "
+                                                                        value="$15">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -865,25 +1343,198 @@
             const descriptionTextarea = document.getElementById('description');
             const reviewCreateBtn = document.getElementById('review-create-btn');
             const otherPreferences = document.getElementById('otherprefernces');
-
+            const scrolldown = document.getElementById('scrolldown');
             var tooltip = new bootstrap.Tooltip(reviewCreateBtn);
 
             descriptionTextarea.addEventListener('input', function () {
                 if (descriptionTextarea.value.trim() !== '') {
                     reviewCreateBtn.classList.remove('disabled');
                     reviewCreateBtn.style.backgroundColor = "#009ef7";
+                    scrolldown.classList.remove('d-none')
                     tooltip.show();
-                    otherPreferences.classList.remove('d-none');
-                    otherPreferences.scrollIntoView({ behavior: 'smooth' });
+
                 } else {
                     reviewCreateBtn.classList.add('disabled');
                     reviewCreateBtn.style.backgroundColor = "";
+                    scrolldown.classList.add('d-none')
                     tooltip.hide();
-                    otherPreferences.classList.add('d-none');
+
 
                 }
             });
         });
+
+        document.getElementById('flat-rate-checkbox-michael').addEventListener('change', function () {
+            const input = document.getElementsByName('flat-rate-michael')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.startsWith('$')) {
+                    input.value = '$' + input.value.replace('$', '').trim();
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('percentage-checkbox-michael').addEventListener('change', function () {
+            const input = document.getElementsByName('percentage-michael')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.endsWith('%')) {
+                    input.value = input.value.replace('%', '').trim() + '%';
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('commission-checkbox-michael').addEventListener('change', function () {
+            const input = document.getElementsByName('commission-michael')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.startsWith('$')) {
+                    input.value = '$' + input.value.replace('$', '').trim();
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('flat-rate-checkbox-sarah').addEventListener('change', function () {
+            const input = document.getElementsByName('flat-rate-sarah')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.startsWith('$')) {
+                    input.value = '$' + input.value.replace('$', '').trim();
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('percentage-checkbox-sarah').addEventListener('change', function () {
+            const input = document.getElementsByName('percentage-sarah')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.endsWith('%')) {
+                    input.value = input.value.replace('%', '').trim() + '%';
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('commission-checkbox-sarah').addEventListener('change', function () {
+            const input = document.getElementsByName('commission-sarah')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.startsWith('$')) {
+                    input.value = '$' + input.value.replace('$', '').trim();
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('flat-rate-checkbox-default').addEventListener('change', function () {
+            const input = document.getElementsByName('flat-rate-default')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.startsWith('$')) {
+                    input.value = '$' + input.value.replace('$', '').trim();
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('percentage-checkbox-default').addEventListener('change', function () {
+            const input = document.getElementsByName('percentage-default')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.endsWith('%')) {
+                    input.value = input.value.replace('%', '').trim() + '%';
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+
+        document.getElementById('commission-checkbox-default').addEventListener('change', function () {
+            const input = document.getElementsByName('commission-default')[0];
+            if (this.checked) {
+                input.disabled = false;
+                if (!input.value.startsWith('$')) {
+                    input.value = '$' + input.value.replace('$', '').trim();
+                }
+            } else {
+                input.value = "0";
+                input.disabled = true;
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollLink = document.querySelector('#scrolldown a[href="#otherprefernces"]');
+
+            scrollLink.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetElement = document.getElementById('otherprefernces');
+                if (targetElement) {
+                    const headerHeight = 150;
+                    const targetPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = targetPosition + window.pageYOffset - headerHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const input = document.getElementById('description');
+
+            if (input) {  // Check if the element exists to avoid errors
+                input.addEventListener('focus', function () {
+                    // When the input is focused, ensure it starts with a dollar sign
+                    if (!this.value.startsWith('$')) {
+                        this.value = '$' + this.value;
+                    }
+                });
+
+                input.addEventListener('input', function () {
+                    // Enforce the dollar sign at the beginning while typing
+                    this.value = this.value.replace(/[^0-9.$]/g, ''); // Remove any non-numeric and non-dollar sign characters
+                    if (!this.value.startsWith('$')) {
+                        this.value = '$' + this.value;
+                    }
+                });
+
+                input.addEventListener('blur', function () {
+                    // When the input loses focus, check if the value is valid
+                    if (this.value === '$') {
+                        this.value = ''; // Clear if only $ is left
+                    } else if (this.value === '$0' && this.value.length === 1) {
+                        this.value = '$0'; // Reset to placeholder value if cleared
+                    }
+                });
+            }
+        });
+
     </script>
 </body>
 

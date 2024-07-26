@@ -503,3 +503,64 @@
      overflow-y: auto;
      min-height: 100px;
  }
+
+ .coupounbadeage {
+     background-color: rgb(20 114 143) !important;
+ }
+
+ .coupon-card {
+     background: #059fcf;
+     color: #fff;
+     text-align: left;
+     padding: 20px 30px;
+     border-radius: 15px;
+     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+     position: relative;
+
+ }
+
+ .coupon-card .form-check-input:checked {
+     background-color: #14728f;
+     border-color: #05a1d2;
+ }
+
+
+ .coupon-card h3 {
+     font-size: 14px;
+     font-weight: 400;
+     line-height: normal;
+
+ }
+
+ .coupon-card p {
+     font-size: 12px;
+
+ }
+
+ .coupon-row {
+     display: flex;
+     align-items: center;
+     margin: 15px auto;
+     width: fit-content;
+
+ }
+
+ .circle1,
+ .circle2 {
+     background: #ffffff;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+
+ }
+
+ .circle1 {
+     left: -10px;
+ }
+
+ .circle2 {
+     right: -10px;
+ }
