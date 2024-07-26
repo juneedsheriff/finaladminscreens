@@ -1085,6 +1085,7 @@ flex-row-fluid {
 
 .max1000 {
     max-width: 1000px;
+    margin: 0px auto !important;
 }
 
 .boxshadow {
@@ -1362,10 +1363,6 @@ flex-row-fluid {
     border-radius: .475rem;
 }
 
-.mtb-100 {
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
-}
 
 .input-group.providers {
     flex-wrap: nowrap;
@@ -1374,18 +1371,20 @@ flex-row-fluid {
 
 
 .arrowanimation a {
-    position: relative;
+    background-color: #fff;
+    position: fixed;
     z-index: 2;
     display: inline-block;
-
+top:45%;
+box-shadow: 0 0 35px 0 rgba(165, 165, 165, .1);
     color: #0193c0;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-
+right:50px;
     text-align: center;
     font-weight: 700;
-    animation: headShake 5s normal;
+    animation: headShake 5s infinite;
 }
 
 @keyframes headShake {
@@ -1430,17 +1429,73 @@ flex-row-fluid {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 2px solid #049bca;
-    border-bottom: 2px solid #049bca;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb05 1.5s infinite;
-    animation: sdb05 1.5s infinite;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 2px solid #059FCF;
+    border-radius: 100%;
     box-sizing: border-box;
 }
+#scrolldown a span::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid #059FCF;
+    border-bottom: 2px solid #059FCF;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+#scrolldown a span::before{
+    position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+
+}
+@-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 
 @-webkit-keyframes sdb05 {
@@ -1513,4 +1568,15 @@ flex-row-fluid {
     100% {
         opacity: 0;
     }
+}
+
+
+.mtb-100 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.tags-badge.bg-primary {
+  font-size: 12px;
+    background-color: #059FCF !important;
 }
