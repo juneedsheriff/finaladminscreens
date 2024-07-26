@@ -1091,8 +1091,37 @@ flex-row-fluid {
     box-shadow: 0 0 35px 0 rgba(165, 165, 165, .1);
 }
 
-.fixed-width-input {
+.fixed-width-input,
+.fixed-width-input:focus {
     width: 100px;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: .45em;
+}
+
+.form-check-input {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: -.125rem;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, .25);
+    appearance: none;
+    color-adjust: exact;
+    transition: background-color .15s ease-in-out, background-position .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: #009ef7;
+    border-color: #009ef7;
 }
 
 .flex-grow-select {
@@ -1112,6 +1141,11 @@ flex-row-fluid {
     border: none;
 }
 
+.btn.btn-light-secondary {
+    color: rgb(37 47 74);
+    border-color: #e9e1e1;
+    background-color: #f9f9f9;
+}
 
 .buzopsraido .buzopsbox {
     min-width: 100px;
@@ -1287,4 +1321,196 @@ flex-row-fluid {
 
 .form-switch .form-check-input:focus {
     box-shadow: none;
+}
+
+.required:after {
+    content: "*";
+    position: relative;
+    font-size: inherit;
+    color: #f1416c;
+    padding-left: .25rem;
+    font-weight: 700;
+}
+
+.symbol.symbol-35px>img {
+    width: 35px;
+    height: 35px;
+}
+
+.mb-5 {
+    margin-bottom: 1.25rem !important
+}
+
+.h-auto {
+    height: auto;
+}
+
+.symbol.symbol-circle,
+.symbol.symbol-circle .symbol-label,
+.symbol.symbol-circle>img {
+    border-radius: 50%;
+}
+
+.text-gray-900 {
+    color: #181c32 !important;
+}
+
+.form-control,
+.form-control:focus,
+.form-select,
+.form-select:focus {
+    border-radius: .475rem;
+}
+
+.mtb-100 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.input-group.providers {
+    flex-wrap: nowrap;
+}
+
+
+
+.arrowanimation a {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+
+    color: #0193c0;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+
+    text-align: center;
+    font-weight: 700;
+    animation: headShake 5s normal;
+}
+
+@keyframes headShake {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg)
+    }
+
+    18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg)
+    }
+
+    31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg)
+    }
+
+    43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg)
+    }
+
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+
+
+#scrolldown a {
+    padding-top: 60px;
+}
+
+#scrolldown a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid #049bca;
+    border-bottom: 2px solid #049bca;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+}
+
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
