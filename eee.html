@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Toggle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .content { display: none; }
+        .content.active { display: block; }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input { display: none; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center">
+        <label class="switch">
+            <input type="checkbox" id="couponSwitch">
+            <span class="slider round"></span>
+        </label>
+        <span class="ml-2" id="toggleLabel">View Coupons</span>
+    </div>
+
+    <div class="content mt-3" id="viewCoupons">
+        <h6>View Coupons</h6>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="coupon-card">
+
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div> <span class="badge coupounbadeage">Fixed</span></div>
+                        <div> <label
+                                class="form-check form-switch form-check-custom ">
+                                <input class="form-check-input" type="checkbox"
+                                    value="1" />
+                                
+                            </label> </div>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2 class="mt-3 fs-6">StrongerYou2024</h2>
+                            <p class="mb-0 text-muted"> Frequency: One Time</p>
+                        </div>
+                        <div> $10 </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="fs-7 mb-0 text-muted">Valid Till: Dec 20, 2024</p>
+
+                        </div>
+                        <div> <i class="bi bi-trash3-fill text-danger cursor-pointer" ></i></div>
+                    </div>
+
+                   
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="coupon-card">
+
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div> <span class="badge coupounbadeage">Percentage</span></div>
+                        <div> <label
+                                class="form-check form-switch form-check-custom ">
+                                <input class="form-check-input" type="checkbox"
+                                    value="1" />
+                                
+                            </label> </div>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2 class="mt-3 fs-6">PeakPerformanceDeal</h2>
+                            <p class="mb-0 text-muted"> Frequency: Never Ending	</p>
+                        </div>
+                        <div> 25% </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="fs-7 mb-0 text-muted">Valid Till: Dec 20, 2024</p>
+
+                        </div>
+                        <div> <i class="bi bi-trash3-fill text-danger cursor-pointer" ></i></div>
+                    </div>
+
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content mt-3" id="addCoupons">
+        <h6>Add Coupons</h6>
+        <div class="border-0 p-5 mb-10 rounded-3 bg-white"  >
+            <div class="w-100">
+                <div class="border-bottdom mb-0 pb-2">
+                    <h1 class="mb-3" style="font-size: 16px;">Basic Information</h1>
+                    <div class="row">
+                        <div class="col-md-4 fv-row mb-5">
+                           
+                            <label class="d-flex align-items-center fs-7 fw-bold mb-2">
+                                <span class="required">Coupon Name
+
+                                </span>
+
+                            </label>
+                           
+                            <input type="text" class="form-control form-control-sm  "
+                                name="name" placeholder="Enter Coupon Name" value="" />
+                          
+                        </div>
+                        <div class="col-md-4 fv-row mb-0">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label
+                                        class="d-flex align-items-center fs-7 fw-bold mb-2">
+                                        <span class="required">Coupon Code
+
+                                        </span>
+
+                                    </label>
+                                    <div class="input-group mb-0">
+
+                                        <input type="text"
+                                            class="form-control form-control-sm"
+                                            id="basic-url" aria-describedby="basic-addon3"
+                                            value="R0P4-2QL5-71NK" />
+                                        <a class="btn btn-primary btn-sm    "><i
+                                                class="las la-copy fs-2"></i>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                             
+                        </div>
+                        <div class="col-md-4 fv-row mb-3">
+
+                            <div class="row fv-row">
+
+                                <div class="col-12">
+                                    <label class="required fs-7 fw-500 form-label mb-2"> Discount Type</label>
+                                        <select class="form-select  form-select-sm">
+                                            <option selected disabled> Select Discount Type</option>
+                                            <option value="1">One Time</option>
+                                            <option value="2">Never Ending</option>
+                                            <option value="3">Limited Duration</option>
+                                        </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <label class="d-flex align-items-center fs-7 fw-bold mb-2">
+                                <span class="required"> Coupon Type</span>
+
+                            </label>
+                            
+                            <div class="row">
+                                <div class="mb-0 fv-row">
+                                   
+                                    <div class="d-flex flex-stack">
+                                        
+                                        <div class="d-flex align-items-center">
+                                            
+                                            <label
+                                                class="form-check form-check-custom  me-5 buzopsraido">
+                                                <input
+                                                    class="form-check-input h-20px w-20px"
+                                                    type="radio" name="57" value="yes"
+                                                    checked>
+                                                <div class=" buzopsbox">
+                                                    <span
+                                                        class="form-check-label fw-bold">Percentage</span>
+                                                </div>
+                                            </label>
+                                           
+                                            <label
+                                                class="form-check form-check-custom  me-5 buzopsraido">
+                                                <input
+                                                    class="form-check-input h-20px w-20px"
+                                                    type="radio" name="57" value="no">
+                                                <div class=" buzopsbox">
+                                                    <span
+                                                        class="form-check-label fw-bold">Fixed</span>
+                                                </div>
+                                            </label>
+
+                                             
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="fv-row ">
+                      
+
+                    </div>
+
+
+
+                </div>
+
+
+                 
+            </div>
+        </div>
+        <div class="border-0 p-5 mb-10 rounded-3  bg-white" data-kt-stepper-element="content">
+            <div class="w-100">
+                <div class="border-bottdom mb-5 pb-2">
+                    <h1 class="mb-3" style="font-size: 16px;">Linked Services</h1>
+
+
+
+                    <div class="fv-row ">
+                        
+                        <div class="row">
+                            <div class="mb-5 fv-row">
+                               
+                                <div class="d-flex flex-stack">
+                                     
+                                    <div class="d-flex align-items-center">
+                                         
+                                        <label
+                                            class="form-check form-check-custom  me-5 buzopsraido">
+                                            <input class="form-check-input h-20px w-20px"
+                                                type="radio" name="59" value="yes">
+                                            <div class=" buzopsbox">
+                                                <span class="form-check-label fw-bold">Any
+                                                    Service</span>
+                                            </div>
+                                        </label>
+                                       
+                                        <label
+                                            class="form-check form-check-custom  me-5 buzopsraido">
+                                            <input class="form-check-input h-20px w-20px"
+                                                type="radio" name="59" value="no" checked>
+                                            <div class=" buzopsbox">
+                                                <span
+                                                    class="form-check-label fw-bold">Specific
+                                                    Service</span>
+                                            </div>
+                                        </label>
+
+
+                                       
+                                    </div>
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12 mb-4">
+                                <label class="  fs-7 fw-bold form-label mb-2">
+                                    Choose Memberships
+
+
+                                </label>
+                                <div class="row mb-3 g-3">
+                                    <div class="col-md-12">
+                                       <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                        <option selected disabled hidden value="">Choose a tag...</option>
+                                        <option value="1" selected="selected"> Membership 1</option>
+                                        <option value="2"> Membership 2</option>
+                                        <option value="3"> Membership 3</option>
+                                      </select>
+                                     </div>
+                                  </div>
+                            </div>
+                            <div class=" col-md-12  mb-4">
+                                <label class="  fs-7 fw-bold form-label mb-2">
+                                    Choose Addons
+
+
+
+
+
+                                </label>
+                                <div class="row mb-3 g-3">
+                                    <div class="col-md-12">
+                                       <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                        <option selected disabled hidden value="">Choose a tag...</option>
+                                        <option value="1" selected="selected"> Addons 1</option>
+                                        <option value="2"> Addons 2</option>
+                                        <option value="3"> Addons 3</option>
+                                      </select>
+                                     </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class=" col-md-12  mb-4">
+                                <label class="  fs-7 fw-bold form-label mb-2">
+                                    Choose One-on-One
+
+
+
+
+
+                                </label>
+                                <div class="row mb-3 g-3">
+                                    <div class="col-md-12">
+                                       <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                        <option selected disabled hidden value="">Choose a tag...</option>
+                                        <option value="1" selected="selected"> One-on-One 1</option>
+                                        <option value="2"> One-on-One 2</option>
+                                        <option value="3"> One-on-One 3</option>
+                                      </select>
+                                     </div>
+                                  </div>
+                            </div>
+                            <div class=" col-md-12 mb-4">
+                                <label class="  fs-7 fw-bold form-label mb-2">
+                                    Choose Packages
+
+
+
+
+
+                                </label>
+                                <div class="row mb-3 g-3">
+                                    <div class="col-md-12">
+                                       <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                        <option selected disabled hidden value="">Choose a tag...</option>
+                                        <option value="1" selected="selected">Package 1</option>
+                                        <option value="2">Package 2</option>
+                                        <option value="3">Package 3</option>
+                                      </select>
+                                     </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                     
+
+                    </div>
+                    <h1 class="mb-3" style="font-size: 16px;">Usage Limits Summary</h1>
+                    <div class="row">
+                        <div id="cancellationfee" class="col-md-3">
+                            <label class="fs-7 fw-bold form-label">Percent
+                            </label>
+                            <input type="text" class="form-control form-control-sm  " name="name" placeholder="" value="">
+                        </div>
+                        <div id="mincanellatdays" class="col-md-3">
+                            <label class="fs-7 fw-bold form-label">Total Usage Limit
+
+
+
+
+
+
+                            </label>
+                            <input type="text" class="form-control form-control-sm  " name="name" placeholder="" value="">
+
+                        </div>
+                        <div id="freezefee" class="col-md-3">
+                            <label class="fs-7 fw-bold form-label"> Per-client Use Limit
+
+                            </label>
+                            <input type="text" class="form-control form-control-sm  " name="name" placeholder="" value="">
+
+
+                        </div>
+                        <div class="col-md-3 fv-row mb-5">
+                            
+                            <label class="d-flex align-items-center fs-7 fw-bold mb-2">
+                                <span class=" ">Expiry Date
+
+                                </span>
+
+                            </label>
+                           
+                            <input type="date" class="form-control form-control-sm  "
+                                name="name" placeholder="" value="">
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('couponSwitch').addEventListener('change', function() {
+        const isChecked = this.checked;
+        const viewCoupons = document.getElementById('viewCoupons');
+        const addCoupons = document.getElementById('addCoupons');
+        const toggleLabel = document.getElementById('toggleLabel');
+
+        if (isChecked) {
+            viewCoupons.classList.remove('active');
+            addCoupons.classList.add('active');
+            toggleLabel.textContent = 'Add Coupons';
+        } else {
+            viewCoupons.classList.add('active');
+            addCoupons.classList.remove('active');
+            toggleLabel.textContent = 'View Coupons';
+        }
+    });
+
+    // Set initial state
+    document.getElementById('viewCoupons').classList.add('active');
+</script>
+
+</body>
+</html>
