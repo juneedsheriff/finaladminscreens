@@ -1632,7 +1632,7 @@
                                                     </label>
                                                     <div class="row mb-3 g-3">
                                                         <div class="col-md-12">
-                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true" id="membershipscoupns">
                                                             <option selected disabled hidden value="">Choose a tag...</option>
                                                             <option value="1" selected="selected"> Membership 1</option>
                                                             <option value="2"> Membership 2</option>
@@ -1652,7 +1652,7 @@
                                                     </label>
                                                     <div class="row mb-3 g-3">
                                                         <div class="col-md-12">
-                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true" id="membershipscoupns2">
                                                             <option selected disabled hidden value="">Choose a tag...</option>
                                                             <option value="1" selected="selected"> Addons 1</option>
                                                             <option value="2"> Addons 2</option>
@@ -1675,7 +1675,7 @@
                                                     </label>
                                                     <div class="row mb-3 g-3">
                                                         <div class="col-md-12">
-                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true" id="membershipscoupns"3>
                                                             <option selected disabled hidden value="">Choose a tag...</option>
                                                             <option value="1" selected="selected"> One-on-One 1</option>
                                                             <option value="2"> One-on-One 2</option>
@@ -1695,7 +1695,7 @@
                                                     </label>
                                                     <div class="row mb-3 g-3">
                                                         <div class="col-md-12">
-                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true">
+                                                           <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true" id="membershipscoupns4">
                                                             <option selected disabled hidden value="">Choose a tag...</option>
                                                             <option value="1" selected="selected">Package 1</option>
                                                             <option value="2">Package 2</option>
@@ -1979,7 +1979,10 @@
 
 <script type="module">
     import Tags from "https://cdn.jsdelivr.net/gh/lekoala/bootstrap5-tags@master/tags.js";
-    Tags.init("select");
+    Tags.init("#membershipscoupns");
+    Tags.init("#membershipscoupns2");
+    Tags.init("#membershipscoupns3");
+    Tags.init("#membershipscoupns4");
   </script>
   <script>
     document.getElementById('couponSwitch').addEventListener('change', function() {
