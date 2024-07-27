@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzops</title>
+    <link href="assets/css/plugins/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/plugins/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/plugins/line-awesome/line-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles-main.css">
+    <link rel="stylesheet" href="assets/css/buzops-global.css">
+
+
+</head>
+
+<body class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
+    <div class="d-flex flex-column flex-root">
+        <div class="page d-flex flex-row flex-column-fluid">
+            <div class="aside bg-buzpos" data-kt-drawer="true" data-kt-drawer-name="aside"
+                data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+                data-kt-drawer-direction="start" data-kt-drawer-toggle="#buzops_aside_toggle">
+
+                <div class="aside-nav d-flex flex-column align-lg-center flex-column-fluid w-100 pt-5 pt-lg-0">
+                    <div class="menu menu-column menu-title-gray-600 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-6"
+                        data-kt-menu="true">
+                        <div class="menu-item py-3 pt-2">
+                            <a class="menu-link  menu-center" href="#">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-speedometer2 fs-2"></i>
+                                </span>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </div>
+                        <div data-kt-menu-trigger="hover" data-kt-menu-placement="right-start" class="menu-item py-3">
+                            <span class="menu-link menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-calendar-date fs-2"></i>
+                                </span>
+                                <span class="menu-title">Calendar</span>
+                            </span>
+
+                        </div>
+                        <div class="menu-item py-3">
+                            <span class="menu-link menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-people fs-2"></i>
+                                </span>
+                                <span class="menu-title">Subscribers</span>
+                            </span>
+
+                        </div>
+                        <div class="menu-item py-3">
+                            <span class="menu-link menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-prospets bi-person fs-2"></i>
+                                </span>
+                                <span class="menu-title">Prospects</span>
+                            </span>
+
+                        </div>
+                        <div data-kt-menu-trigger="hover" data-kt-menu-placement="right-start" class="menu-item py-3">
+                            <span class="menu-link active menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-briefcase fs-2"></i>
+                                </span>
+                                <span class="menu-title">View Services</span>
+                            </span>
+                            <div class="menu-sub menu-sub-dropdown w-225px px-1 py-4">
+                                <div class="menu-item">
+                                    <div class="menu-content">
+                                        <span class="menu-section fs-5 fw-bolder ps-1 py-1">View Services</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Appointment Types</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Group Class</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Packages</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Membership Types</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Add-Ons</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Coupons</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-kt-menu-trigger="hover" data-kt-menu-placement="right-start" class="menu-item py-3">
+                            <span class="menu-link menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi bi-bar-chart-line fs-2"></i>
+                                </span>
+                                <span class="menu-title">Reports</span>
+                            </span>
+                            <div class="menu-sub menu-sub-dropdown w-225px px-1 py-4">
+                                <div class="menu-item">
+                                    <div class="menu-content">
+                                        <span class="menu-section fs-5 fw-bolder ps-1 py-1">Reports</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Email Logs</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Revenue</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Sales</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Transactions</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Manage Decline</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Payouts</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-kt-menu-trigger="hover" data-kt-menu-placement="right-start" class="menu-item py-3">
+                            <span class="menu-link menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi  bi-megaphone fs-2"></i>
+                                </span>
+                                <span class="menu-title">Auto Marketing</span>
+
+                            </span>
+
+                        </div>
+                        <div data-kt-menu-trigger="hover" data-kt-menu-placement="right-start" class="menu-item py-3">
+                            <span class="menu-link menu-center">
+                                <span class="menu-icon me-0">
+                                    <i class="bi  bi-gear fs-2"></i>
+                                </span>
+                                <span class="menu-title">Setup</span>
+
+                            </span>
+                            <div class="menu-sub menu-sub-dropdown w-225px px-1 py-4">
+                                <div class="menu-item">
+                                    <div class="menu-content">
+                                        <span class="menu-section fs-5 fw-bolder ps-1 py-1">Setup</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Appointment Types</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Group Class</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Packages</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Membership Types</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Add-Ons</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Coupons</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Business Profile</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Staff</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Notifications</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-footer d-flex flex-column align-items-center flex-column-auto">
+                    <div class="mb-7">
+                        <button type="button"
+                            class="btn btm-sm btn-icon text-white btn-active-color-primary btn-active-light"
+                            data-kt-menu-trigger="hover" data-kt-menu-overflow="true" data-kt-menu-placement="top-start"
+                            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-dismiss="hover">
+                            <i class="bi bi-ui-checks-grid text-white fs-2 text-lg-1"></i>
+                        </button>
+                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px"
+                            data-kt-menu="true">
+                            <div class="menu-item px-3">
+                                <div class="menu-content fs-6 text-dark fw-bolder px-2 py-3">Other Links</div>
+                            </div>
+                            <div class="separator mb-3 opacity-75"></div>
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3"><i class="bi  bi-clock-history icon-buzpos"></i>Site
+                                    Activity</a>
+                            </div>
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3"><i class="bi bi-telephone icon-buzpos">
+                                    </i> Contact Support</a>
+                            </div>
+                            <div class=" mb-3 opacity-75"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper w-100 d-flex flex-column flex-row-fluid">
+                <div class="header bg-white align-items-stretch">
+                    <div class="container-fluid d-flex align-items-stretch justify-content-between">
+                        <div class="d-flex align-items-center d-lg-none ms-n3 me-1" title="Show aside menu">
+                            <div class="btn btn-icon btn-active-color-primary w-40px h-40px ps-0"
+                                id="buzops_aside_toggle">
+                                <i class="bi bi-list" style="font-size: 26px;"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+                            <a href="#" class="d-lg-none">
+                                <img alt="Logo" src="assets/images/alloy.png" class="h-30px" />
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+                            <div class="d-flex align-items-stretch">
+                                <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-20 pb-2 pb-lg-0"
+                                    data-kt-drawer="true">
+                                    <img src="assets/images/alloy.png" alt="" class="h-55px">
+                                </div>
+                                <div class="searchclient  d-flex align-items-stretch flex-shrink-0">
+                                    <div class="d-flex align-items-center position-relative my-1">
+                                        <span class="svg-icon svg-icon-1 position-absolute ms-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
+                                                    rx="1" transform="rotate(45 17.0365 15.1223)" fill="#0295c2"></rect>
+                                                <path
+                                                    d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                    fill="#0295c2"></path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control   w-300px ps-14"
+                                            placeholder="Search Client">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-stretch justify-self-end flex-shrink-0">
+
+
+                                <div class="d-flex align-items-stretch justify-self-end flex-shrink-0">
+
+                                    <div class="d-flex align-items-center ms-1 ms-lg-3">
+                                        <div class="btn btn-icon position-relative btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"
+                                            data-kt-menu-trigger="hover" data-kt-menu-attach="parent"
+                                            data-kt-menu-placement="bottom-end">
+                                            <i class="bi bi bi-lightning-fill fs-2   fs-2"></i>
+
+                                        </div>
+                                        <div class="menu menu-sub menu-sub-dropdown menu-column w-400px w-lg-400px"
+                                            data-kt-menu="true">
+                                            <div
+                                                class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-4 py-5 bg-primary">
+                                                <h3 class="text-white fw-bold mb-0">Quick Access</h3>
+                                            </div>
+                                            <div class="row g-0 quicklins">
+                                                <div class="col-6">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom"><i
+                                                            class="bi bi-person-plus fs-1 icon-buzpos"></i><span
+                                                            class="fs-7 fw-bold text-gray-800 mb-0">Create
+                                                            Client</span></a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                        <i class="la la-id-card fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0"> Membership</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                        <i class="bi bi-person fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Private
+                                                            Appt</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                        <i class="bi bi-people fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Small Group
+                                                            Appt</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                        <i class="bi bi-person-check fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Session Sign
+                                                            Off</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                        <i class="la la-users fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Group Appt</span>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                        <i class="bi bi-geo-alt fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Url Links</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class=" d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom ">
+                                                        <i class="la la-gift fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Packages</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom ">
+                                                        <i class="bi bi-ticket-detailed fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Coupons</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 text-center">
+                                                    <a href="#"
+                                                        class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom ">
+                                                        <i class="bi bi-person-gear fs-1 icon-buzpos"></i>
+                                                        <span class="fs-7 fw-bold text-gray-800 mb-0 ">Manage
+                                                            Client</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-1 ms-lg-3">
+                                        <div class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                            data-kt-menu-trigger="hover" data-kt-menu-placement="bottom-end"
+                                            data-kt-menu-attach="parent">
+                                            <div class="menu-content d-flex align-items-center px-3">
+                                                <div class="symbol symbol-40px me-0">
+                                                    <img alt="Logo" src="assets/images/user.jpg" />
+                                                </div>
+
+                                                <div class="d-flex flex-column">
+                                                    <i class="bi bi-chevron-down" style="margin-left: 15px;"></i>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-275px"
+                                            data-kt-menu="true">
+                                            <div class="menu-item px-3">
+                                                <div class="menu-content d-flex align-items-center px-3">
+                                                    <div class="d-flex flex-column">
+                                                        <div class="fw-bolder d-flex align-items-center fs-5">Michael
+                                                            Benso
+                                                        </div><a href="#"
+                                                            class="fw-bold text-muted text-hover-primary fs-7">mbenso@buzops.com</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="separator my-2"></div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5"> My Profile</a>
+                                            </div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">
+                                                    <span class="menu-text"> Change Password</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">
+                                                    <span class="menu-text">
+                                                        My Links</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">
+                                                    <span class="menu-text">
+                                                        Short Codes</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">
+                                                    <span class="menu-text">
+                                                        Security 2FA</span>
+                                                </a>
+                                            </div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">
+                                                    <span class="menu-text">
+                                                        Billing</span>
+                                                </a>
+                                            </div>
+                                            <div class="separator my-2"></div>
+                                            <div class="menu-item px-5">
+                                                <a href="#" class="menu-link px-5">
+                                                    </i> Sign Out</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center d-lg-none ms-3 me-n1"
+                                        title="Show header menu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="content d-flex flex-column flex-column-fluid">
+                    <div class="toolbar">
+                        <div class="container-fluid">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center toolbarfiltermain">
+                                <div class="page-title d-flex align-items-center flex-grow-1">
+                                    <h1 class="text-dark fw-bolder fs-5 my-1">View Services</h1>
+                                    <div class="d-flex gx-2 gy-2 ms-3 filterstoolbar">
+                                        <div class=" w-200px filter1">
+                                            <select class="form-select form-select-sm custom-select">
+                                                <option selected value="1">Appointments</option>
+                                                <option value="2">Group Class</option>
+                                                <option value="2">Packages</option>
+                                                <option value="2">Memberships</option>
+                                                <option value="2">Coupons</option>
+                                                <option value="2">Add-ons</option>
+                                            </select>
+                                        </div>
+                                        <div class=" w-200px filter2">
+                                            <select class="form-select form-select-sm custom-select">
+                                                <option value="1" selected disabled>Select Type</option>
+                                                <option value="1">All</option>
+                                                <option value="2">Private Appts</option>
+                                                <option value="2">Semi-Private</option>
+                                                <option value="2">Preset</option>
+                                            </select>
+                                        </div>
+                                        <div class="w-150px filter3">
+                                            <select class="form-select form-select-sm custom-select">
+                                                <option selected value="1" disabled>Select Status</option>
+                                                <option value="1">All</option>
+                                                <option value="2">Active</option>
+                                                <option value="2">Deactivated</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center py-1 btnsection2">
+                                    <div class="btn-group ">
+                                        <a href="#" class="menu-link p-2 active  me-2" onclick="changeView('grid')"
+                                            id="gridViewButton"> <i class="bi fs-3 bi-grid"></i> </a>
+                                        <a href="#" class="menu-link  p-2  me-2" onclick="changeView('list')"
+                                            id="listViewButton"> <i class="bi  fs-3 bi-list-ul"></i>
+                                        </a>
+
+                                    </div>
+                                    <a href="#" class="btn btn-sm btn-primary" id="review-create-btn"
+                                        data-bs-toggle="modal" data-bs-target="#buzpos_createapptstype">Create</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-fluid d-flex flex-stack h-100">
+                        <div class="card-body pb-0  h-100 ">
+                            <div class="boxshadow p-5 mb-10 rounded-3 bg-white h-100">
+                                <div class="w-100 container-fluid m-0 px-2   mt-0 ">
+
+                                    <div id="appointmentsView" class="row grid-view gx-3 gy-3">
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Personal Fit</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Functional Training</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Zumba Fitness
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">HIIT Workout</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">CrossFit Challenge
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Pilates Session</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Cardio Kickboxing
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Strength Training
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Bootcamp Blast</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Yoga Session</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Gym Buddy</h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="appointment card ">
+                                            <div class="card-body">
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Trainer Connect
+                                                        </h5>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="sharelinksgrid">
+                                                            <li> <a href="#"> <i class="las la-copy fs-2"></i></a></li>
+                                                            <li> <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#buzpos_share"> <i
+                                                                        class="bi bi-share fs-4 pe-2"></i>
+                                                                </a></li>
+                                                            <li> <a href="#"
+                                                                    class="cursor-pointer symbol symbol-30px symbol-md-40px"
+                                                                    data-kt-menu-trigger="hover"
+                                                                    data-kt-menu-placement="bottom-end"
+                                                                    data-kt-menu-attach="parent"> <i
+                                                                        class="bi bi-three-dots-vertical fs-4"></i>
+                                                                </a>
+                                                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-7 w-200px"
+                                                                    data-kt-menu="true">
+
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5"> Edit
+                                                                            Appt</a>
+                                                                    </div>
+                                                                    <div class="menu-item px-5">
+                                                                        <a href="#" class="menu-link px-5">
+                                                                            <span class="menu-text"> Deactivate</span>
+                                                                        </a>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center">
+                                                    <div>30 Min </div>
+                                                    <div> $35 </div>
+                                                </div>
+                                                <div class="d-flex pb-2  justify-content-between align-items-center">
+                                                    <div>Appt Count 30 </div>
+                                                    <div> <span class="badge badge-light-info"> Private</span></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="modal fade" tabindex="-1" id="buzpos_createapptstype" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h3 class="modal-title">Choose an appointment Type</h3>
+
+
+                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i class="bi bi-x fs-1"><span class="path1"></span><span class="path2"></span></i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body">
+                    <div>
+                        <ul class="services-create">
+                            <li> <a href="#">
+                                    <div class="d-flex create-app-item">
+                                        <div class="symbol  symbol-40px symbol-circle ">
+                                            <span class="symbol-label  bg-light-danger text-danger fs-6 fw-bolder "><i
+                                                    class="bi bi bi-person-fill  fs-2"></i></span>
+                                        </div>
+                                        <div>
+                                            <h5> One-on-One </h5>
+                                            <p class="text-muted">Trainers can schedule a meeting with a single person.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li> <a href="#">
+                                    <div class="d-flex create-app-item">
+                                        <div class="symbol  symbol-40px symbol-circle ">
+                                            <span class="symbol-label  bg-light-danger text-danger fs-6 fw-bolder "><i
+                                                    class="bi bi-people-fill fs-2"></i></span>
+                                        </div>
+                                        <div>
+                                            <h5> Semi Private/ Small Group </h5>
+                                            <p class="text-muted">Trainers can schedule a meeting with multiple persons
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li> <a href="#">
+                                    <div class="d-flex create-app-item">
+                                        <div class="symbol  symbol-40px symbol-circle ">
+                                            <span class="symbol-label  bg-light-danger text-danger fs-6 fw-bolder "><i
+                                                    class="bi bi-person-fill-gear fs-2 "></i></span>
+                                        </div>
+                                        <div>
+                                            <h5> Preset </h5>
+                                            <p class="text-muted">Meetings are automatically assigned to a person on
+                                                your team
+                                                based on criteria
+                                                that you set.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="buzpos_share" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h3 class="modal-title">Share Appointment</h3>
+
+
+                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i class="bi bi-x fs-1"><span class="path1"></span><span class="path2"></span></i>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group mb-5 providers">
+                                <span class="input-group-text fs-6" id="basic-addon3">https://buzops.com/</span>
+                                <input type="text" class="form-control form-control-sm flex-nowrap h-40px"
+                                    id="basic-url" aria-describedby="basic-addon3" value="G3JXF2BQ">
+                                <a class="btn btn-primary btn-sm h-40px    " style="line-height: 24px;"><i
+                                        class="las la-copy fs-2"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="rounded d-flex flex-stack bg-active-lighten p-4">
+
+                                <div class="d-flex align-items-center">
+
+
+
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="assets/images/150-1.jpg">
+                                    </div>
+
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-7 fw-bolder text-gray-900 text-hover-primary  mb-2">Emma
+                                            Smith</a>
+                                        <div class="col-md-12 mt-2">
+                                            <div class="input-group providers mb-5">
+
+                                                <input type="text"
+                                                    class="form-control form-control-sm h-auto fixed-width-input-provider"
+                                                    value="G3JXF2BQ">
+                                                <a class="btn btn-primary btn-sm "><i class="las la-copy fs-2"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="rounded d-flex flex-stack bg-active-lighten p-4">
+
+                                <div class="d-flex align-items-center">
+
+
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="assets/images/150-15.jpg">
+                                    </div>
+
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-7 fw-bolder text-gray-900 text-hover-primary  mb-2">Sean
+                                            Bean</a>
+                                        <div class="col-md-12 mt-2">
+                                            <div class="input-group providers mb-5">
+
+                                                <input type="text"
+                                                    class="form-control form-control-sm h-auto fixed-width-input-provider"
+                                                    value="A4KDF9E3">
+                                                <a class="btn btn-primary btn-sm "><i class="las la-copy fs-2"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="rounded d-flex flex-stack bg-active-lighten p-4">
+
+                                <div class="d-flex align-items-center">
+
+
+
+                                    <div class="symbol symbol-35px symbol-circle">
+                                        <img alt="Pic" src="assets/images/150-4.jpg">
+                                    </div>
+
+                                    <div class="ms-5">
+                                        <a href="#" class="fs-7 fw-bolder text-gray-900 text-hover-primary  mb-2">Brian
+                                            Cox</a>
+                                        <div class="col-md-12 mt-2">
+                                            <div class="input-group providers mb-5">
+
+                                                <input type="text"
+                                                    class="form-control form-control-sm h-auto fixed-width-input-provider"
+                                                    value="Q2WET2FK">
+                                                <a class="btn btn-primary btn-sm "><i class="las la-copy fs-2"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/css/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/bootstrap-maxlength.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/buzops.menu.js"></script>
+    <script>
+        function changeView(view) {
+            const appointmentsView = document.getElementById('appointmentsView');
+            const listViewButton = document.getElementById('listViewButton');
+            const gridViewButton = document.getElementById('gridViewButton');
+
+            if (view === 'list') {
+                appointmentsView.classList.remove('grid-view');
+                appointmentsView.classList.add('list-view');
+                listViewButton.classList.add('active');
+                gridViewButton.classList.remove('active');
+            } else if (view === 'grid') {
+                appointmentsView.classList.remove('list-view');
+                appointmentsView.classList.add('grid-view');
+                gridViewButton.classList.add('active');
+                listViewButton.classList.remove('active');
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
