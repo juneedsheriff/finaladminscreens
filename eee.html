@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Toggle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.9.8/tagify.css">
+    <style>
+        .content { display: none; }
+        .content.active { display: block; }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="couponSwitch" value="1">
+            <label class="form-check-label" for="couponSwitch" id="toggleLabel">View Coupons</label>
+        </div>
+    </div>
+
+    <div class="content mt-3" id="viewCoupons">
+        <h6>View Coupons</h6>
+        <p>List of coupons...</p>
+    </div>
+
+    <div class="content mt-3" id="addCoupons">
+        <h6>Add Coupons</h6>
+        <form>
+            <div class="row mb-3 g-3">
+                <div class="col-md-12">
+                    <select class="form-select" name="tagsClear[]" multiple data-allow-clear="true" id="couponTags">
+                        <option selected disabled hidden value="">Choose a tag...</option>
+                        <option value="1" selected="selected">Membership 1</option>
+                        <option value="2">Membership 2</option>
+                        <option value="3">Membership 3</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Coupon</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.9.8/jQuery.tagify.min.js"></script>
+<script>
+    document.getElementById('couponSwitch').addEventListener('change', function() {
+        const isChecked = this.checked;
+        const viewCoupons = document.getElementById('viewCoupons');
+        const addCoupons = document.getElementById('addCoupons');
+        const toggleLabel = document.getElementById('toggleLabel');
+
+        if (isChecked) {
+            viewCoupons.classList.remove('active');
+            addCoupons.classList.add('active');
+            toggleLabel.textContent = 'Add Coupons';
+        } else {
+            viewCoupons.classList.add('active');
+            addCoupons.classList.remove('active');
+            toggleLabel.textContent = 'View Coupons';
+        }
+    });
+
+    // Set initial state
+   
+</script>
+
+</body>
+</html>

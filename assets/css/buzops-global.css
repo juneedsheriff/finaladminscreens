@@ -1577,6 +1577,19 @@ right:50px;
 }
 
 .tags-badge.bg-primary {
-  font-size: 12px;
-    background-color: #059FCF !important;
+    font-size: 12px;
+    background-color:#dddcdf !important;
+    color: #696666;
+    font-weight: 500;
+}
+
+
+.tags-badge.bg-primary  .btn-close-white {
+    filter: none;
+}
+
+.content-coupons { display: none; }
+.content-coupons.active { display: block; }
+.bg-primary {
+     background-color: rgb(1 146 191) !important;
 }
